@@ -8,9 +8,7 @@ Fusion plugin `fusion-plugin-geoip` is a server only plugin which can get user g
 
 ## Basic example
 
-### fusion-plugin-geoip
-
-1. Register plugin in your `app.js`.
+### Register plugin in your `app.js`
 
 ```js
 import GeoIpPlugin, {GeoIpToken, GeoIpConfigToken} from 'fusion-plugin-geoip';
@@ -35,7 +33,7 @@ app.register(GeoIpConfigToken, {
 app.register(GeoIpToken, GeoIpPlugin);
 ```
 
-2. Use it in your plugin.
+### Inject geoip
 
 ```js
 createPlugin({
